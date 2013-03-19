@@ -1,0 +1,27 @@
+.box .subtitle {
+  font-weight:bold;
+  font-size:24pt;
+  font-family: "Verdana, Arial, Helvetica, Sans-serif";
+}
+
+.box .content {
+  border:gray solid 1px;
+  background-color: #eee;
+  font-family: "Verdana, Arial, Helvetica, Sans-serif";
+}
+
+.box .content TABLE {
+  width:100%;
+}
+
+.box .content TH {
+  width:10px;
+  vertical-align:top;
+  text-align:right;
+  padding:10px;
+}
+
+.box .content TD {
+  padding:10px;
+}
+
