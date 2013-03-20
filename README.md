@@ -15,16 +15,22 @@ easy-to-use yet.
 
 Features:
 
-*  It's very hungry. If you create tables well enough with the right
-   indexes, you can hint to the model to go and get more data than
-   necessary. You can also hint to the model NOT to do that too. This
+*  It's very grabby... in a good way. If you create tables well enough with
+   the right indexes, you can hint to the model to go and get more data
+   than necessary. You can also hint to the model NOT to do that too. This
    results in very large queries (pages of SQL for a single SELECT), but
    they can execute lightning-fast and heavily reduce the query count for
-   a page.
+   a page: rather than querying for every object (as some ORMs do) it
+   gets child objects as deep as either the developer decides, or the user
+   overrides. I've often had an average query count of 1 per page _or less_
+   (thanks to caching)
 
 *  It's also fairly good at memcaching. The main use is caching the SQL
    rather than the results themselves, as the SQL can take time to
    formulate.
+
+*  Rather than using a static code generator, it's just PHP code, so it
+   can be tweaked easily.
 
 *  It runs like a dog without APC, but runs VERY nicely with it.
 
